@@ -26,22 +26,22 @@ const navItems = [
   },
   {
     name: "Features",
-    href: "#features",
+    href: "/#features",
     icon: <Info className="h-4 w-4" />,
   },
   {
     name: "Pricing",
-    href: "#pricing",
+    href: "/pricing",
     icon: <Info className="h-4 w-4" />,
   },
   {
     name: "Gallery",
-    href: "#gallery",
+    href: "/#gallery",
     icon: <Info className="h-4 w-4" />,
   },
   {
     name: "Blog",
-    href: "#blog",
+    href: "/blog",
     icon: <Info className="h-4 w-4" />,
   },
 ];

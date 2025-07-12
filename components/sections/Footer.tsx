@@ -1,13 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Flame, Twitter, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   const footerLinks = {
-    Product: ["Features", "Pricing", "API", "Documentation", "Changelog"],
-    Company: ["About", "Blog", "Careers", "Press", "Partners"],
-    Resources: ["Help Center", "Community", "Tutorials", "Webinars", "Status"],
-    Legal: ["Privacy", "Terms", "Security", "GDPR", "Cookies"],
+    Product: [
+      { name: "Features", href: "/#features" },
+      { name: "Pricing", href: "/pricing" },
+      { name: "API", href: "#" },
+      { name: "Documentation", href: "#" },
+      { name: "Changelog", href: "#" },
+    ],
+    Company: [
+      { name: "About", href: "#" },
+      { name: "Blog", href: "/blog" },
+      { name: "Careers", href: "#" },
+      { name: "Press", href: "#" },
+      { name: "Partners", href: "#" },
+    ],
+    Resources: [
+      { name: "Help Center", href: "#" },
+      { name: "Community", href: "#" },
+      { name: "Tutorials", href: "#" },
+      { name: "Webinars", href: "#" },
+      { name: "Status", href: "#" },
+    ],
+    Legal: [
+      { name: "Privacy", href: "#" },
+      { name: "Terms", href: "#" },
+      { name: "Security", href: "#" },
+      { name: "GDPR", href: "#" },
+      { name: "Cookies", href: "#" },
+    ],
   };
 
   return (
@@ -15,12 +40,12 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
-            <div className="flex items-center gap-2 mb-6">
+            <Link href="/" className="flex items-center gap-2 mb-6">
               <Flame className="h-8 w-8 text-orange-500" />
               <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                 Dripflow
               </span>
-            </div>
+            </Link>
             <p className="text-gray-400 text-lg mb-8 max-w-md">
               Transform websites into engaging newsletters with AI. Join
               thousands of content creators who trust Dripflow.
@@ -74,13 +99,13 @@ export const Footer = () => {
               <h4 className="font-semibold mb-4 text-lg">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
-                      {link}
-                    </a>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>

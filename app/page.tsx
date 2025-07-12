@@ -4,9 +4,7 @@ import { BlogPreview } from "@/components/sections/BlogPreview";
 import { Gallery } from "@/components/sections/Gallery";
 import { Hero } from "@/components/sections/Hero";
 import { InputForm } from "@/components/sections/InputForm";
-import { Pricing } from "@/components/sections/Pricing";
-
-import { Footer } from "react-day-picker";
+import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -16,7 +14,6 @@ export default function Home() {
       <InputForm />
       <Benefits />
       <Gallery />
-      <Pricing />
       <BlogPreview />
       <Footer />
     </div>
