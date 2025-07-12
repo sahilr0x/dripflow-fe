@@ -6,7 +6,7 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$29",
+      price: "$29.99",
       period: "/month",
       description: "Perfect for individuals and small teams",
       features: [
@@ -21,7 +21,7 @@ export const Pricing = () => {
     },
     {
       name: "Pro",
-      price: "$99",
+      price: "$99.99",
       period: "/month",
       description: "Best for growing businesses",
       features: [

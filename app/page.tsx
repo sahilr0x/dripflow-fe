@@ -5,6 +5,7 @@ import { Gallery } from "@/components/sections/Gallery";
 import { Hero } from "@/components/sections/Hero";
 import { InputForm } from "@/components/sections/InputForm";
 import { Footer } from "@/components/sections/Footer";
+import SavingsSection from "@/components/SavingsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <InputForm />
+      <SavingsSection />
       <Benefits />
       <Gallery />
       <BlogPreview />
